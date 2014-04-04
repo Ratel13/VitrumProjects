@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072F3C0C18EE132E0043D4F7 /* 1280x800 in Resources */ = {isa = PBXBuildFile; fileRef = 072F3C0818EE132E0043D4F7 /* 1280x800 */; };
+		072F3C0D18EE132E0043D4F7 /* 1280x720 in Resources */ = {isa = PBXBuildFile; fileRef = 072F3C0918EE132E0043D4F7 /* 1280x720 */; };
+		072F3C0E18EE132E0043D4F7 /* 1024x768 in Resources */ = {isa = PBXBuildFile; fileRef = 072F3C0A18EE132E0043D4F7 /* 1024x768 */; };
+		072F3C0F18EE132E0043D4F7 /* 2048x1536 in Resources */ = {isa = PBXBuildFile; fileRef = 072F3C0B18EE132E0043D4F7 /* 2048x1536 */; };
+		072F3C1A18EE1E9D0043D4F7 /* BaseGameElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072F3C1818EE1E9D0043D4F7 /* BaseGameElement.cpp */; };
+		072F3C1D18EE1EA90043D4F7 /* BasePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072F3C1B18EE1EA90043D4F7 /* BasePlayer.cpp */; };
+		072F3C2018EE1EB60043D4F7 /* BaseSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072F3C1E18EE1EB60043D4F7 /* BaseSprite.cpp */; };
+		072F3C2318EE1EC30043D4F7 /* CoinElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072F3C2118EE1EC30043D4F7 /* CoinElement.cpp */; };
+		072F3C2618EE1F390043D4F7 /* GameEngineLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072F3C2418EE1F390043D4F7 /* GameEngineLayer.cpp */; };
+		072F3C2918EE1F410043D4F7 /* HudGameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072F3C2718EE1F410043D4F7 /* HudGameLayer.cpp */; };
+		072F3C2C18EE1F4F0043D4F7 /* GameScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 072F3C2A18EE1F4F0043D4F7 /* GameScreen.cpp */; };
+		072F3C2E18EE21380043D4F7 /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 072F3C2D18EE21380043D4F7 /* audio */; };
 		07AED87318EE0C56004AF5F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AED87218EE0C56004AF5F7 /* QuartzCore.framework */; };
 		07AED87518EE0C56004AF5F7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AED87418EE0C56004AF5F7 /* OpenGLES.framework */; };
 		07AED87718EE0C56004AF5F7 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AED87618EE0C56004AF5F7 /* OpenAL.framework */; };
@@ -279,10 +291,31 @@
 		07AEDC0818EE0C5F004AF5F7 /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = 07AEDC0718EE0C5F004AF5F7 /* cpVect.c */; };
 		07AEDC1018EE0C5F004AF5F7 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AEDC0F18EE0C5F004AF5F7 /* libwebsockets.a */; };
 		07AEDC1618EE0C5F004AF5F7 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07AEDC1518EE0C5F004AF5F7 /* AppDelegate.cpp */; };
-		07AEDC1918EE0C5F004AF5F7 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07AEDC1818EE0C5F004AF5F7 /* HelloWorldScene.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		072F3C0818EE132E0043D4F7 /* 1280x800 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 1280x800; path = Resources/1280x800; sourceTree = "<group>"; };
+		072F3C0918EE132E0043D4F7 /* 1280x720 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 1280x720; path = Resources/1280x720; sourceTree = "<group>"; };
+		072F3C0A18EE132E0043D4F7 /* 1024x768 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 1024x768; path = Resources/1024x768; sourceTree = "<group>"; };
+		072F3C0B18EE132E0043D4F7 /* 2048x1536 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 2048x1536; path = Resources/2048x1536; sourceTree = "<group>"; };
+		072F3C1618EE13A30043D4F7 /* AppMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppMacros.h; path = Classes/AppMacros.h; sourceTree = "<group>"; };
+		072F3C1718EE13AC0043D4F7 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Constants.h; sourceTree = "<group>"; };
+		072F3C1818EE1E9D0043D4F7 /* BaseGameElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseGameElement.cpp; path = Classes/BaseGameElement.cpp; sourceTree = "<group>"; };
+		072F3C1918EE1E9D0043D4F7 /* BaseGameElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseGameElement.h; path = Classes/BaseGameElement.h; sourceTree = "<group>"; };
+		072F3C1B18EE1EA90043D4F7 /* BasePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BasePlayer.cpp; path = Classes/BasePlayer.cpp; sourceTree = "<group>"; };
+		072F3C1C18EE1EA90043D4F7 /* BasePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasePlayer.h; path = Classes/BasePlayer.h; sourceTree = "<group>"; };
+		072F3C1E18EE1EB60043D4F7 /* BaseSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BaseSprite.cpp; path = Classes/BaseSprite.cpp; sourceTree = "<group>"; };
+		072F3C1F18EE1EB60043D4F7 /* BaseSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseSprite.h; path = Classes/BaseSprite.h; sourceTree = "<group>"; };
+		072F3C2118EE1EC30043D4F7 /* CoinElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CoinElement.cpp; path = Classes/CoinElement.cpp; sourceTree = "<group>"; };
+		072F3C2218EE1EC30043D4F7 /* CoinElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoinElement.h; path = Classes/CoinElement.h; sourceTree = "<group>"; };
+		072F3C2418EE1F390043D4F7 /* GameEngineLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameEngineLayer.cpp; path = Classes/GameEngineLayer.cpp; sourceTree = "<group>"; };
+		072F3C2518EE1F390043D4F7 /* GameEngineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameEngineLayer.h; path = Classes/GameEngineLayer.h; sourceTree = "<group>"; };
+		072F3C2718EE1F410043D4F7 /* HudGameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HudGameLayer.cpp; path = Classes/HudGameLayer.cpp; sourceTree = "<group>"; };
+		072F3C2818EE1F410043D4F7 /* HudGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HudGameLayer.h; path = Classes/HudGameLayer.h; sourceTree = "<group>"; };
+		072F3C2A18EE1F4F0043D4F7 /* GameScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScreen.cpp; path = Classes/GameScreen.cpp; sourceTree = "<group>"; };
+		072F3C2B18EE1F4F0043D4F7 /* GameScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScreen.h; path = Classes/GameScreen.h; sourceTree = "<group>"; };
+		072F3C2D18EE21380043D4F7 /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = audio; path = Resources/audio; sourceTree = "<group>"; };
+		072F3C2F18EE21D50043D4F7 /* Sounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Sounds.h; path = Classes/Sounds.h; sourceTree = "<group>"; };
 		07AED86F18EE0C56004AF5F7 /* VitrumRoadKill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VitrumRoadKill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AED87218EE0C56004AF5F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		07AED87418EE0C56004AF5F7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -871,8 +904,6 @@
 		07AEDC1218EE0C5F004AF5F7 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		07AEDC1418EE0C5F004AF5F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		07AEDC1518EE0C5F004AF5F7 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		07AEDC1718EE0C5F004AF5F7 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		07AEDC1818EE0C5F004AF5F7 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -897,6 +928,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		072F3C1018EE13360043D4F7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				072F3C1618EE13A30043D4F7 /* AppMacros.h */,
+				072F3C1718EE13AC0043D4F7 /* Constants.h */,
+				072F3C2F18EE21D50043D4F7 /* Sounds.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		072F3C1118EE13680043D4F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				072F3C1518EE13900043D4F7 /* GamePlayers */,
+				072F3C1418EE13830043D4F7 /* GameElements */,
+				072F3C1E18EE1EB60043D4F7 /* BaseSprite.cpp */,
+				072F3C1F18EE1EB60043D4F7 /* BaseSprite.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		072F3C1218EE136F0043D4F7 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				072F3C2418EE1F390043D4F7 /* GameEngineLayer.cpp */,
+				072F3C2518EE1F390043D4F7 /* GameEngineLayer.h */,
+				072F3C2718EE1F410043D4F7 /* HudGameLayer.cpp */,
+				072F3C2818EE1F410043D4F7 /* HudGameLayer.h */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		072F3C1318EE13750043D4F7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				072F3C2A18EE1F4F0043D4F7 /* GameScreen.cpp */,
+				072F3C2B18EE1F4F0043D4F7 /* GameScreen.h */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		072F3C1418EE13830043D4F7 /* GameElements */ = {
+			isa = PBXGroup;
+			children = (
+				072F3C1818EE1E9D0043D4F7 /* BaseGameElement.cpp */,
+				072F3C1918EE1E9D0043D4F7 /* BaseGameElement.h */,
+				072F3C2118EE1EC30043D4F7 /* CoinElement.cpp */,
+				072F3C2218EE1EC30043D4F7 /* CoinElement.h */,
+			);
+			name = GameElements;
+			sourceTree = "<group>";
+		};
+		072F3C1518EE13900043D4F7 /* GamePlayers */ = {
+			isa = PBXGroup;
+			children = (
+				072F3C1B18EE1EA90043D4F7 /* BasePlayer.cpp */,
+				072F3C1C18EE1EA90043D4F7 /* BasePlayer.h */,
+			);
+			name = GamePlayers;
+			sourceTree = "<group>";
+		};
 		07AED86618EE0C56004AF5F7 = {
 			isa = PBXGroup;
 			children = (
@@ -944,6 +1036,11 @@
 		07AED88318EE0C57004AF5F7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				072F3C2D18EE21380043D4F7 /* audio */,
+				072F3C0818EE132E0043D4F7 /* 1280x800 */,
+				072F3C0918EE132E0043D4F7 /* 1280x720 */,
+				072F3C0A18EE132E0043D4F7 /* 1024x768 */,
+				072F3C0B18EE132E0043D4F7 /* 2048x1536 */,
 				07AED88418EE0C57004AF5F7 /* CloseNormal.png */,
 				07AED88618EE0C57004AF5F7 /* CloseSelected.png */,
 				07AED88818EE0C57004AF5F7 /* Default.png */,
@@ -2093,10 +2190,12 @@
 		07AEDC1318EE0C5F004AF5F7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				072F3C1318EE13750043D4F7 /* Screens */,
+				072F3C1218EE136F0043D4F7 /* Layers */,
+				072F3C1118EE13680043D4F7 /* Models */,
+				072F3C1018EE13360043D4F7 /* Helpers */,
 				07AEDC1418EE0C5F004AF5F7 /* AppDelegate.h */,
 				07AEDC1518EE0C5F004AF5F7 /* AppDelegate.cpp */,
-				07AEDC1718EE0C5F004AF5F7 /* HelloWorldScene.h */,
-				07AEDC1818EE0C5F004AF5F7 /* HelloWorldScene.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2151,16 +2250,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072F3C0D18EE132E0043D4F7 /* 1280x720 in Resources */,
 				07AED89518EE0C57004AF5F7 /* Icon.png in Resources */,
 				07AED93818EE0C58004AF5F7 /* ChangeLog in Resources */,
+				072F3C2E18EE21380043D4F7 /* audio in Resources */,
 				07AED88518EE0C57004AF5F7 /* CloseNormal.png in Resources */,
 				07AED89118EE0C57004AF5F7 /* Icon-Small.png in Resources */,
 				07AED88D18EE0C57004AF5F7 /* Icon-72.png in Resources */,
 				07AED88B18EE0C57004AF5F7 /* HelloWorld.png in Resources */,
+				072F3C0F18EE132E0043D4F7 /* 2048x1536 in Resources */,
 				07AED88F18EE0C57004AF5F7 /* Icon-Small-50.png in Resources */,
 				07AED89918EE0C57004AF5F7 /* iTunesArtwork in Resources */,
 				07AED89318EE0C57004AF5F7 /* Icon-Small@2x.png in Resources */,
+				072F3C0C18EE132E0043D4F7 /* 1280x800 in Resources */,
 				07AED88918EE0C57004AF5F7 /* Default.png in Resources */,
+				072F3C0E18EE132E0043D4F7 /* 1024x768 in Resources */,
 				07AED88718EE0C57004AF5F7 /* CloseSelected.png in Resources */,
 				07AED89718EE0C57004AF5F7 /* Icon@2x.png in Resources */,
 				07AEDAAC18EE0C5D004AF5F7 /* project.pbxproj in Resources */,
@@ -2185,6 +2289,7 @@
 				07AED9B518EE0C59004AF5F7 /* CCCommon.mm in Sources */,
 				07AEDB9A18EE0C5E004AF5F7 /* SkeletonData.cpp in Sources */,
 				07AED90818EE0C58004AF5F7 /* CCZone.cpp in Sources */,
+				072F3C1D18EE1EA90043D4F7 /* BasePlayer.cpp in Sources */,
 				07AEDA6518EE0C5C004AF5F7 /* CCTextFieldTTF.cpp in Sources */,
 				07AEDBEA18EE0C5F004AF5F7 /* cpArray.c in Sources */,
 				07AED9C918EE0C59004AF5F7 /* CCLock.cpp in Sources */,
@@ -2207,6 +2312,7 @@
 				07AED96C18EE0C58004AF5F7 /* CCTransition.cpp in Sources */,
 				07AED97618EE0C58004AF5F7 /* CCMenu.cpp in Sources */,
 				07AEDBA318EE0C5E004AF5F7 /* Slot.cpp in Sources */,
+				072F3C1A18EE1E9D0043D4F7 /* BaseGameElement.cpp in Sources */,
 				07AEDAA818EE0C5D004AF5F7 /* SimpleAudioEngine_objc.m in Sources */,
 				07AEDB7C18EE0C5E004AF5F7 /* Attachment.cpp in Sources */,
 				07AEDA8C18EE0C5C004AF5F7 /* CCTouch.cpp in Sources */,
@@ -2261,6 +2367,7 @@
 				07AEDA7C18EE0C5C004AF5F7 /* CCTileMapAtlas.cpp in Sources */,
 				07AED96918EE0C58004AF5F7 /* CCScene.cpp in Sources */,
 				07AEDBFE18EE0C5F004AF5F7 /* cpSpaceHash.c in Sources */,
+				072F3C2C18EE1F4F0043D4F7 /* GameScreen.cpp in Sources */,
 				07AEDA4818EE0C5C004AF5F7 /* TGAlib.cpp in Sources */,
 				07AED8D918EE0C57004AF5F7 /* CCConfiguration.cpp in Sources */,
 				07AED8C318EE0C57004AF5F7 /* CCActionPageTurn3D.cpp in Sources */,
@@ -2337,6 +2444,7 @@
 				07AEDBA618EE0C5E004AF5F7 /* SlotData.cpp in Sources */,
 				07AEDA8518EE0C5C004AF5F7 /* CCTMXTiledMap.cpp in Sources */,
 				07AEDB3018EE0C5E004AF5F7 /* CCInvocation.cpp in Sources */,
+				072F3C2918EE1F410043D4F7 /* HudGameLayer.cpp in Sources */,
 				07AED94018EE0C58004AF5F7 /* mat3.c in Sources */,
 				07AEDB3C18EE0C5E004AF5F7 /* CCEditBoxImplIOS.mm in Sources */,
 				07AED9C418EE0C59004AF5F7 /* CCFileUtilsIOS.mm in Sources */,
@@ -2398,7 +2506,6 @@
 				07AED9C718EE0C59004AF5F7 /* CCImage.mm in Sources */,
 				07AEDBE018EE0C5F004AF5F7 /* cpRatchetJoint.c in Sources */,
 				07AEDBDE18EE0C5F004AF5F7 /* cpPivotJoint.c in Sources */,
-				07AEDC1918EE0C5F004AF5F7 /* HelloWorldScene.cpp in Sources */,
 				07AEDA1518EE0C5B004AF5F7 /* CCAnimationCache.cpp in Sources */,
 				07AEDBD218EE0C5F004AF5F7 /* cpConstraint.c in Sources */,
 				07AED98018EE0C58004AF5F7 /* CCMotionStreak.cpp in Sources */,
@@ -2408,11 +2515,14 @@
 				07AED8AE18EE0C57004AF5F7 /* CCActionCatmullRom.cpp in Sources */,
 				07AEDB4A18EE0C5E004AF5F7 /* CCScrollView.cpp in Sources */,
 				07AEDA2B18EE0C5C004AF5F7 /* CCPointExtension.cpp in Sources */,
+				072F3C2318EE1EC30043D4F7 /* CoinElement.cpp in Sources */,
+				072F3C2618EE1F390043D4F7 /* GameEngineLayer.cpp in Sources */,
 				07AEDAF718EE0C5D004AF5F7 /* CCScale9SpriteLoader.cpp in Sources */,
 				07AEDA3418EE0C5C004AF5F7 /* ccUtils.cpp in Sources */,
 				07AEDB3718EE0C5E004AF5F7 /* CCEditBox.cpp in Sources */,
 				07AEDB4618EE0C5E004AF5F7 /* CCEditBoxImplWin.cpp in Sources */,
 				07AED95C18EE0C58004AF5F7 /* CCLabelAtlas.cpp in Sources */,
+				072F3C2018EE1EB60043D4F7 /* BaseSprite.cpp in Sources */,
 				07AED91818EE0C58004AF5F7 /* CCGrid.cpp in Sources */,
 				07AEDA4F18EE0C5C004AF5F7 /* TransformUtils.cpp in Sources */,
 				07AED99018EE0C59004AF5F7 /* CCParticleSystem.cpp in Sources */,
