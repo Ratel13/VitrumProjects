@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="384" height="12" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="REFERENCIA" tilewidth="64" tileheight="64">
+  <image source="REFERENCIA.png" width="1024" height="768"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="384" height="12">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3L1bZQBQAFwEsLktKttLSUdIh0h3RKgyDdjTRISEgjLdKdwqcxv3HW2g/zOKVKSkpKU4aylKM8FfiKilTiaypThapUozql8vPz8/ML+WvwDTWpRW3qUJd61KcBDWlEY5rQlG/z8/Pz8wv7v6MZzWlBS1rRmjZ8T1va0Z4OdKQTnfPz8/PzC/t/oAtd6UZ3evAjPelFb/rQl370ZwAD8/Pz8/ML+wfxE4P5mSEMZRjDGcFIRjGaMYxlHOPz8/Pz8wv7JzCRSUzmF6YwlWlMZwYzmcVs5jCXefn5+fn5hf3z+ZUFLGQRi1nCUpaxnBX8xkpW8Tur8/Pz8/ML+9ewlnWsZwMb2cRmtrCVbWxnBzvZxe78/Pz8/ML+PexlH3+wnwMc5BCHOcJRjnGcPznByfz8/Pz8wv5TnOYvznCWc5znby5wkUtc5gpXucb1/Pz8/PzC/n+4wU1ucZs73OUe/3Kf/3jAQx7xmCf5+fn5+YX9T3nGc17wkle85g1vecd7PvCR//nE5/z8/Pz8wv4vmcFILwBIAAA=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="384" height="12">
+  <object name="COIN" type="Object" x="576" y="448" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="672" y="448" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="768" y="448" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="864" y="448" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="960" y="448" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="2055" y="320" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="1767" y="320" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="1863" y="320" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="2151" y="320" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="1959" y="320" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Objeto" x="2880" y="256" width="64" height="160">
+   <properties>
+    <property name="Obstaculo" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="4544" y="256" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="4736" y="288" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="4352" y="352" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="4448" y="288" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="4640" y="256" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="4832" y="352" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Objeto" x="3520" y="384" width="64" height="160">
+   <properties>
+    <property name="Obstaculo" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="5664" y="320" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="5632" y="384" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="5600" y="448" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="5568" y="512" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="5440" y="352" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="5824" y="288" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="5632" y="256" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="5920" y="352" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="5536" y="288" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="5728" y="256" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="7165" y="448" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="6877" y="352" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="7069" y="384" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="6845" y="448" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="6685" y="448" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="6909" y="320" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="6877" y="384" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="6973" y="352" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="6781" y="384" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="6813" y="512" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="8369" y="288" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="8081" y="192" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="8273" y="224" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="8049" y="445" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="7889" y="288" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="8113" y="317" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="8081" y="381" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="8177" y="192" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="7985" y="224" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="8017" y="509" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Objeto" x="9328" y="288" width="64" height="160">
+   <properties>
+    <property name="Obstaculo" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Objeto" x="9425" y="288" width="64" height="160">
+   <properties>
+    <property name="Obstaculo" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Objeto" x="9910" y="384" width="64" height="160">
+   <properties>
+    <property name="Obstaculo" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Objeto" x="9813" y="384" width="64" height="160">
+   <properties>
+    <property name="Obstaculo" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Objeto" x="10792" y="256" width="64" height="160">
+   <properties>
+    <property name="Obstaculo" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="10549" y="288" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="10933" y="224" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="10741" y="160" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="11029" y="288" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="10645" y="224" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="10837" y="160" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="12053" y="416" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="11573" y="416" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="11957" y="352" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="11765" y="288" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="11669" y="352" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="AIR COIN" type="Object" x="11861" y="288" width="64" height="64">
+   <properties>
+    <property name="AIR COIN" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Objeto" x="11816" y="384" width="64" height="160">
+   <properties>
+    <property name="Obstaculo" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="12909" y="384" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="12877" y="448" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="12941" y="320" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="12845" y="512" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="13431" y="512" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="13495" y="384" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="13527" y="320" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="13463" y="448" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="13544" y="512" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="13608" y="384" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="13640" y="320" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="WALL" type="Object" x="13576" y="448" width="64" height="64">
+   <properties>
+    <property name="WALL" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="24416" y="386" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="23738" y="391" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+  <object name="COIN" type="Object" x="23225" y="391" width="64" height="64">
+   <properties>
+    <property name="COIN" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

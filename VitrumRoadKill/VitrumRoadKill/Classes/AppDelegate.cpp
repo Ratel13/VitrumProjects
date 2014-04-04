@@ -47,6 +47,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     
     vector<string> searchPaths;
     
+    /*
     if(frameSize.height > res_ratio_ipad.size.height)
     {
         searchPaths.push_back(res_ratio_ipadhd.directory);
@@ -62,7 +63,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     else
     {
         searchPaths.push_back(res_ratio_16.directory);
-    }
+    }*/
+    
+    searchPaths.push_back(res_ratio_ipad.directory);
+    
     
     searchPaths.push_back("audio");
     
