@@ -20,5 +20,3 @@
 @property (nonatomic, retain) RootViewController *viewController;
 
 @end
-
-static GPPSignIn* signIn = NULL;

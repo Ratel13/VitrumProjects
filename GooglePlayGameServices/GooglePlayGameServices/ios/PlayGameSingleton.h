@@ -30,6 +30,10 @@ public:
     void unlockAchievement(const char* achievementID);
     void incrementAchievement(int numSteps, const char* achievementID);
     
+    void authenticate();
+    void trySilentAuthentication();
+    bool isSignedIn();
+    
 private:
     void* rootController;
 };

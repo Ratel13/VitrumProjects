@@ -11,6 +11,7 @@
 #import "EAGLView.h"
 #import "AppDelegate.h"
 #import "PlayGameConstants.h"
+#import "PlayGameSingleton.h"
 
 #import "RootViewController.h"
 #import <GoogleOpenSource/GoogleOpenSource.h>
@@ -30,7 +31,7 @@ static AppDelegate s_sharedApplication;
     
     //
     
-    signIn = [GPPSignIn sharedInstance];
+    GPPSignIn* signIn = [GPPSignIn sharedInstance];
     signIn.clientID = [NSString stringWithUTF8String:kClientID];    
     signIn.scopes = [NSArray arrayWithObjects:
                                                 @"https://www.googleapis.com/auth/games",
@@ -40,9 +41,16 @@ static AppDelegate s_sharedApplication;
     signIn.delegate = self;
     signIn.shouldFetchGoogleUserID = YES;
     
-    [[GPPSignIn sharedInstance] authenticate];
     [GPGManager sharedInstance].achievementUnlockedToastPlacement = kGPGToastPlacementTop;
-    //[signIn trySilentAuthentication];
+    
+    if(!PlayGameSingleton::sharedInstance().isSignedIn())
+    {
+        PlayGameSingleton::sharedInstance().trySilentAuthentication();
+        [NSThread detachNewThreadSelector:@selector(playServicesAuthenticate) toTarget:self withObject:nil];
+    }
+
+        //[self performSelectorInBackground:@selector(playServicesAuthenticate) withObject:nil];
+
     
     //
     
@@ -83,6 +91,12 @@ static AppDelegate s_sharedApplication;
     cocos2d::CCApplication::sharedApplication()->run();
     
     return YES;
+}
+
+- (void)playServicesAuthenticate
+{
+    NSLog(@"Authenticate");
+    PlayGameSingleton::sharedInstance().authenticate();
 }
 
 

@@ -2246,6 +2246,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					07F99DA318F2FD6700DC10FB = {
+						DevelopmentTeam = 78S83S4VV9;
+					};
+				};
 			};
 			buildConfigurationList = 07F99D9F18F2FD6700DC10FB /* Build configuration list for PBXProject "GooglePlayGameServices" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2619,6 +2624,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2651,6 +2657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

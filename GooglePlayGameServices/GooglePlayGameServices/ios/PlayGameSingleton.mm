@@ -8,6 +8,7 @@
 
 #import "PlayGameSingleton.h"
 #import <GooglePlayGames/GooglePlayGames.h>
+#import <GooglePlus/GooglePlus.h>
 
 #include "ViewSingleLeaderboard.h"
 #include "ViewLeaderboardPicker.h"
@@ -43,6 +44,12 @@ PlayGameSingleton& PlayGameSingleton::sharedInstance()
 #pragma mark - Single Leaderboard
 void PlayGameSingleton::showSingleLeaderboard(const char* leaderBoardID)
 {
+    
+    if(!isSignedIn())
+    {
+        authenticate();
+        return;
+    }
     
     if(!viewSingleLeaderboard)
         viewSingleLeaderboard = [[ViewSingleLeaderboard alloc] init];
@@ -91,6 +98,13 @@ void PlayGameSingleton::finishSingleLeaderboard()
 #pragma mark - Leaderboards Picker
 void PlayGameSingleton::showLeaderboards()
 {
+    
+    if(!isSignedIn())
+    {
+        authenticate();
+        return;
+    }
+    
     if(!viewLeaderboardPicker)
         viewLeaderboardPicker = [[ViewLeaderboardPicker alloc] init];
     
@@ -115,6 +129,10 @@ void PlayGameSingleton::finishLeaderboards()
 #pragma mark - Submit score
 void PlayGameSingleton::submitScore(long score, const char *leaderBoardID)
 {
+    
+    if(!isSignedIn())
+        return;
+    
     GPGScore* myScore = [[GPGScore alloc] initWithLeaderboardId:[NSString stringWithUTF8String:leaderBoardID]];
     myScore.value = score;
     
@@ -134,13 +152,20 @@ void PlayGameSingleton::submitScore(long score, const char *leaderBoardID)
         }
     }];
     
-    CCMessageBox(CCString::createWithFormat("Score submitted: %lu", score)->getCString(), "Information");
+    CCLog("Score submitted: %lu", score);
 
 }
 
 #pragma mark - Achievements
 void PlayGameSingleton::showAchievements()
 {
+    
+    if(!isSignedIn())
+    {
+        authenticate();
+        return;
+    }
+    
     if(!viewAchiemevents)
         viewAchiemevents = [[ViewAchievements alloc] init];
     
@@ -165,6 +190,13 @@ void PlayGameSingleton::finishAchievements()
 #pragma mark - Manage achievements
 void PlayGameSingleton::revealAchievement(const char *achievementID)
 {
+    
+    if(!isSignedIn())
+    {
+        authenticate();
+        return;
+    }
+    
     GPGAchievement* revealMe = [GPGAchievement achievementWithId:[NSString stringWithUTF8String:achievementID]];
     
     [revealMe revealAchievementWithCompletionHandler:^(GPGAchievementState state, NSError *error) {
@@ -182,6 +214,12 @@ void PlayGameSingleton::revealAchievement(const char *achievementID)
 void PlayGameSingleton::unlockAchievement(const char *achievementID)
 {
     
+    if(!isSignedIn())
+    {
+        authenticate();
+        return;
+    }
+    
     // [GPGManager sharedInstance].achievementUnlockedToastPlacement = kGPGToastPlacementTop;
     // Specify our offset to be 20 points
     // [GPGManager sharedInstance].achievementUnlockedOffset = 20;
@@ -193,17 +231,17 @@ void PlayGameSingleton::unlockAchievement(const char *achievementID)
         if(error)
         {
             // Handle the error
-            CCMessageBox("Achievement Error", "Notification");
+            CCLog("Achievement Error");
         }
         else if (!newlyUnlocked)
         {
             // Achievement was already unlocked
-            CCMessageBox("Achievement Already Unlocked", "Notification");
+            CCLog("Achievement Already Unlocked");
         }
         else
         {
             // Achievement unlocked!
-            CCMessageBox("Achievement Unlocked", "Notification");
+            CCLog("Achievement Unlocked");
         }
         CCLog("Achievement %s", achievementID);
     }];
@@ -211,6 +249,13 @@ void PlayGameSingleton::unlockAchievement(const char *achievementID)
 
 void PlayGameSingleton::incrementAchievement(int numSteps, const char *achievementID)
 {
+    
+    if(!isSignedIn())
+    {
+        authenticate();
+        return;
+    }
+    
     GPGAchievement* incrementMe = [GPGAchievement achievementWithId:[NSString stringWithUTF8String:achievementID]];
     
     [incrementMe incrementAchievementNumSteps:numSteps completionHandler:^(BOOL newlyUnlocked, int currentSteps, NSError *error) {
@@ -228,3 +273,24 @@ void PlayGameSingleton::incrementAchievement(int numSteps, const char *achieveme
         }
     }];
 }
+
+#pragma mark - Login configuration
+void PlayGameSingleton::trySilentAuthentication()
+{
+    [[GPPSignIn sharedInstance] trySilentAuthentication];
+}
+
+void PlayGameSingleton::authenticate()
+{
+    [[GPPSignIn sharedInstance] authenticate];
+}
+
+bool PlayGameSingleton::isSignedIn()
+{
+    bool signedIn = [GPGManager sharedInstance].isSignedIn;
+    CCLog("signedIn: %d", signedIn);
+    return signedIn;
+}
+
+
+
